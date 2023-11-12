@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let billValue = [275, 40, 430];
+        let tip;
+        let totalValue;
+
+        for (let i = 0; i < billValue.length; i++) {
+            tip = billValue[i] >= 50 && billValue[i] <= 300 ? billValue[i] * 0.15 : billValue[i] * 0.2;
+            totalValue = billValue[i] + tip;
+            console.log("The bill was", billValue[i], "the tip was", tip, "and the total value", totalValue);
+        }
+    </script>
+</body>
+
+</html>
